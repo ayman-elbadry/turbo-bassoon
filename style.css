@@ -380,12 +380,11 @@ html[dir="rtl"] .hero-greeting {
 }
 
 .lang-flag {
-    font-size: 1.1rem;
-    line-height: 1;
-}
-
-.lang-code {
-    letter-spacing: 0.05em;
+    width: 22px;
+    height: 16px;
+    border-radius: 2px;
+    object-fit: cover;
+    display: block;
 }
 
 .lang-current i {
@@ -448,9 +447,6 @@ html[dir="rtl"] .hero-greeting {
     font-weight: 600;
 }
 
-.lang-option .lang-flag {
-    font-size: 1.2rem;
-}
 
 .lang-name {
     flex: 1;

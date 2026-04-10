@@ -27,7 +27,7 @@ const translations = {
         "about.title_pre": "À propos de",
         "about.title_highlight": "moi",
         "about.lead": "Passionné par la <strong>conception de systèmes complexes</strong> alliant mécanique, électronique et informatique, je suis convaincu que l'innovation technologique peut transformer positivement notre monde.",
-        "about.p1": "En tant qu'élève ingénieur en <strong>Génie Mécatronique et Systèmes Intelligents</strong> à l'ENSA Safi, je développe des compétences à la croisée de la robotique, de l'intelligence artificielle et des systèmes embarqués.",
+        "about.p1": "En tant qu'élève ingénieur en <strong>Génie Mécatronique et Systèmes Intelligents</strong> à l'ENSA Rabat, je développe des compétences à la croisée de la robotique, de l'intelligence artificielle et des systèmes embarqués.",
         "about.p2": "Ma volonté est d'utiliser la technologie — qu'il s'agisse des <strong>énergies renouvelables</strong>, des <strong>systèmes intelligents</strong> ou de l'<strong>automatisation</strong> — de manière <em>éthique et utile</em>, au service de la communauté et dans le respect des valeurs qui guident mon parcours.",
         "about.stat1_label": "Formation d'Ingénieur",
         "about.stat2_value": "Mécatronique",
@@ -93,7 +93,7 @@ const translations = {
         "contact.form_error": "Veuillez remplir tous les champs obligatoires.",
         "contact.form_email_error": "Veuillez entrer une adresse email valide.",
         // Footer
-        "footer.tagline": "Élève Ingénieur en Mécatronique — ENSA Safi",
+        "footer.tagline": "Élève Ingénieur en Mécatronique — ENSA Rabat",
         "footer.rights": "Tous droits réservés.",
         "footer.dua": "Mon Seigneur, augmente ma science",
     },
@@ -120,7 +120,7 @@ const translations = {
         "about.title_pre": "About",
         "about.title_highlight": "me",
         "about.lead": "Passionate about the <strong>design of complex systems</strong> combining mechanics, electronics and computer science, I am convinced that technological innovation can positively transform our world.",
-        "about.p1": "As an engineering student in <strong>Mechatronics and Intelligent Systems</strong> at ENSA Safi, I develop skills at the crossroads of robotics, artificial intelligence and embedded systems.",
+        "about.p1": "As an engineering student in <strong>Mechatronics and Intelligent Systems</strong> at ENSA Rabat, I develop skills at the crossroads of robotics, artificial intelligence and embedded systems.",
         "about.p2": "My goal is to use technology — whether <strong>renewable energy</strong>, <strong>intelligent systems</strong> or <strong>automation</strong> — in an <em>ethical and useful</em> way, serving the community and respecting the values that guide my path.",
         "about.stat1_label": "Engineering Degree",
         "about.stat2_value": "Mechatronics",
@@ -186,7 +186,7 @@ const translations = {
         "contact.form_error": "Please fill in all required fields.",
         "contact.form_email_error": "Please enter a valid email address.",
         // Footer
-        "footer.tagline": "Mechatronics Engineering Student — ENSA Safi",
+        "footer.tagline": "Mechatronics Engineering Student — ENSA Rabat",
         "footer.rights": "All rights reserved.",
         "footer.dua": "My Lord, increase my knowledge",
     },
@@ -213,7 +213,7 @@ const translations = {
         "about.title_pre": "نبذة",
         "about.title_highlight": "عني",
         "about.lead": "شغوف بـ<strong>تصميم الأنظمة المعقدة</strong> التي تجمع بين الميكانيكا والإلكترونيات وعلوم الحاسوب، وأنا مقتنع بأن الابتكار التكنولوجي يمكن أن يُحدث تغييراً إيجابياً في عالمنا.",
-        "about.p1": "بصفتي طالب هندسة في <strong>الميكاترونيك والأنظمة الذكية</strong> في المدرسة الوطنية للعلوم التطبيقية بآسفي، أطور مهاراتي في مجالات الروبوتيك والذكاء الاصطناعي والأنظمة المدمجة.",
+        "about.p1": "بصفتي طالب هندسة في <strong>الميكاترونيك والأنظمة الذكية</strong> في المدرسة الوطنية للعلوم التطبيقية بالرباط، أطور مهاراتي في مجالات الروبوتيك والذكاء الاصطناعي والأنظمة المدمجة.",
         "about.p2": "هدفي هو استخدام التكنولوجيا — سواء <strong>الطاقات المتجددة</strong> أو <strong>الأنظمة الذكية</strong> أو <strong>الأتمتة</strong> — بطريقة <em>أخلاقية ومفيدة</em>، لخدمة المجتمع واحترام القيم التي توجه مساري.",
         "about.stat1_label": "تكوين هندسي",
         "about.stat2_value": "ميكاترونيك",
@@ -279,7 +279,7 @@ const translations = {
         "contact.form_error": "يرجى ملء جميع الحقول المطلوبة.",
         "contact.form_email_error": "يرجى إدخال بريد إلكتروني صالح.",
         // Footer
-        "footer.tagline": "طالب هندسة الميكاترونيك — ENSA آسفي",
+        "footer.tagline": "طالب هندسة الميكاترونيك — ENSA الرباط",
         "footer.rights": "جميع الحقوق محفوظة.",
         "footer.dua": "ربّ زدني علماً",
     }
@@ -324,12 +324,11 @@ function setLanguage(lang) {
     });
 
     // Update language switcher UI
-    const langFlags = { fr: '🇫🇷', en: '🇬🇧', ar: '🇸🇦' };
-    const langCodes = { fr: 'FR', en: 'EN', ar: 'AR' };
+    const langFlagSrcs = { fr: 'https://flagcdn.com/w40/fr.png', en: 'https://flagcdn.com/w40/gb.png', ar: 'https://flagcdn.com/w40/sa.png' };
     const langCurrentEl = document.getElementById('lang-current');
     if (langCurrentEl) {
-        langCurrentEl.querySelector('.lang-flag').textContent = langFlags[lang];
-        langCurrentEl.querySelector('.lang-code').textContent = langCodes[lang];
+        const flagImg = langCurrentEl.querySelector('.lang-flag');
+        if (flagImg) flagImg.src = langFlagSrcs[lang];
     }
 
     // Highlight active language option
