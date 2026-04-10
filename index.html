@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taoufik Modrik — Élève Ingénieur en Mécatronique</title>
-    <meta name="description" content="Portfolio de Taoufik Modrik, Élève Ingénieur d'État en Génie Mécatronique et Systèmes Intelligents à l'ENSA Safi. Robotique, IA, Systèmes Embarqués.">
-    <meta name="keywords" content="Taoufik Modrik, Mécatronique, ENSA Safi, Robotique, IA, Ingénieur, Portfolio">
-    <meta name="author" content="Taoufik Modrik">
+    <title>Taoufik Moudrik — Élève Ingénieur en Mécatronique</title>
+    <meta name="description" content="Portfolio de Taoufik Moudrik, Élève Ingénieur d'État en Génie Mécatronique et Systèmes Intelligents à l'ENSA Safi. Robotique, IA, Systèmes Embarqués.">
+    <meta name="keywords" content="Taoufik Moudrik, Mécatronique, ENSA Safi, Robotique, IA, Ingénieur, Portfolio">
+    <meta name="author" content="Taoufik Moudrik">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Taoufik Modrik — Portfolio Ingénieur Mécatronique">
+    <meta property="og:title" content="Taoufik Moudrik — Portfolio Ingénieur Mécatronique">
     <meta property="og:description" content="Élève Ingénieur en Mécatronique et Systèmes Intelligents | ENSA Safi">
     <meta property="og:type" content="website">
 
@@ -52,12 +52,35 @@
             </a>
 
             <ul class="nav-links" id="nav-links">
-                <li><a href="#hero" class="nav-link active" data-section="hero">Accueil</a></li>
-                <li><a href="#about" class="nav-link" data-section="about">À propos</a></li>
-                <li><a href="#skills" class="nav-link" data-section="skills">Compétences</a></li>
-                <li><a href="#projects" class="nav-link" data-section="projects">Projets</a></li>
-                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                <li><a href="#hero" class="nav-link active" data-section="hero" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="#about" class="nav-link" data-section="about" data-i18n="nav.about">À propos</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects" data-i18n="nav.projects">Projets</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher" id="lang-switcher">
+                <button class="lang-current" id="lang-current" aria-label="Change language">
+                    <span class="lang-flag">🇫🇷</span>
+                    <span class="lang-code">FR</span>
+                    <i class="ph ph-caret-down"></i>
+                </button>
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <button class="lang-option active" data-lang="fr">
+                        <span class="lang-flag">🇫🇷</span>
+                        <span class="lang-name">Français</span>
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span class="lang-flag">🇬🇧</span>
+                        <span class="lang-name">English</span>
+                    </button>
+                    <button class="lang-option" data-lang="ar">
+                        <span class="lang-flag">🇸🇦</span>
+                        <span class="lang-name">العربية</span>
+                    </button>
+                </div>
+            </div>
 
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
                 <span class="hamburger-line"></span>
@@ -80,40 +103,40 @@
         <div class="hero-container">
             <div class="hero-badge" data-animate="fade-down">
                 <i class="ph ph-mosque"></i>
-                <span>Bismillah — Au nom de Dieu</span>
+                <span data-i18n="hero.badge">Bismillah — Au nom de Dieu</span>
             </div>
             
             <h1 class="hero-title" data-animate="fade-up">
-                <span class="hero-greeting">سلام عليكم</span>
+                <span class="hero-greeting" id="hero-greeting">سلام عليكم</span>
                 <span class="hero-name-line">
-                    Salam, je suis <span class="hero-name-highlight">Taoufik Modrik</span>
+                    <span data-i18n="hero.greeting">Salam, je suis</span> <span class="hero-name-highlight">Taoufik Moudrik</span>
                 </span>
             </h1>
             
             <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
-                Élève Ingénieur en <span class="text-gradient">Mécatronique et Systèmes Intelligents</span> | ENSA Safi
+                <span data-i18n="hero.subtitle_pre">Élève Ingénieur en</span> <span class="text-gradient" data-i18n="hero.subtitle_highlight">Mécatronique et Systèmes Intelligents</span> | ENSA Safi
             </p>
 
             <blockquote class="hero-quote" data-animate="fade-up" data-delay="400">
                 <i class="ph ph-quotes"></i>
-                <p>« Celui qui emprunte un chemin à la recherche du savoir, Allah lui facilite un chemin vers le Paradis. »</p>
-                <cite>— Hadith (Muslim)</cite>
+                <p data-i18n="hero.quote">« Celui qui emprunte un chemin à la recherche du savoir, Allah lui facilite un chemin vers le Paradis. »</p>
+                <cite>— <span data-i18n="hero.quote_source">Hadith (Muslim)</span></cite>
             </blockquote>
 
             <div class="hero-cta" data-animate="fade-up" data-delay="600">
                 <a href="#projects" class="btn btn-primary" id="cta-projects">
                     <i class="ph ph-rocket-launch"></i>
-                    <span>Voir mes projets</span>
+                    <span data-i18n="hero.cta_projects">Voir mes projets</span>
                 </a>
                 <a href="#contact" class="btn btn-outline" id="cta-contact">
                     <i class="ph ph-envelope-simple"></i>
-                    <span>Me contacter</span>
+                    <span data-i18n="hero.cta_contact">Me contacter</span>
                 </a>
             </div>
 
             <div class="hero-scroll-indicator" data-animate="fade-up" data-delay="800">
                 <div class="scroll-line"></div>
-                <span>Défiler</span>
+                <span data-i18n="hero.scroll">Défiler</span>
             </div>
         </div>
     </section>
@@ -123,8 +146,8 @@
         <div class="section-pattern"></div>
         <div class="container">
             <div class="section-header" data-animate="fade-up">
-                <span class="section-tag"><i class="ph ph-user"></i> Présentation</span>
-                <h2 class="section-title">À propos de <span class="text-gradient">moi</span></h2>
+                <span class="section-tag"><i class="ph ph-user"></i> <span data-i18n="about.tag">Présentation</span></span>
+                <h2 class="section-title"><span data-i18n="about.title_pre">À propos de</span> <span class="text-gradient" data-i18n="about.title_highlight">moi</span></h2>
                 <div class="section-divider">
                     <span class="divider-star">✦</span>
                 </div>
@@ -133,17 +156,17 @@
             <div class="about-grid">
                 <div class="about-content" data-animate="fade-right">
                     <div class="about-intro">
-                        <p class="about-lead">
+                        <p class="about-lead" data-i18n-html="about.lead">
                             Passionné par la <strong>conception de systèmes complexes</strong> alliant mécanique, 
                             électronique et informatique, je suis convaincu que l'innovation technologique peut 
                             transformer positivement notre monde.
                         </p>
-                        <p>
+                        <p data-i18n-html="about.p1">
                             En tant qu'élève ingénieur en <strong>Génie Mécatronique et Systèmes Intelligents</strong> 
                             à l'ENSA Safi, je développe des compétences à la croisée de la robotique, 
                             de l'intelligence artificielle et des systèmes embarqués.
                         </p>
-                        <p>
+                        <p data-i18n-html="about.p2">
                             Ma volonté est d'utiliser la technologie — qu'il s'agisse des <strong>énergies renouvelables</strong>, 
                             des <strong>systèmes intelligents</strong> ou de l'<strong>automatisation</strong> — de manière 
                             <em>éthique et utile</em>, au service de la communauté et dans le respect des valeurs 
@@ -156,28 +179,28 @@
                             <div class="stat-icon"><i class="ph ph-graduation-cap"></i></div>
                             <div class="stat-info">
                                 <span class="stat-value">ENSA Safi</span>
-                                <span class="stat-label">Formation d'Ingénieur</span>
+                                <span class="stat-label" data-i18n="about.stat1_label">Formation d'Ingénieur</span>
                             </div>
                         </div>
                         <div class="stat-card" data-animate="fade-up" data-delay="200">
                             <div class="stat-icon"><i class="ph ph-gear-six"></i></div>
                             <div class="stat-info">
-                                <span class="stat-value">Mécatronique</span>
-                                <span class="stat-label">Spécialisation</span>
+                                <span class="stat-value" data-i18n="about.stat2_value">Mécatronique</span>
+                                <span class="stat-label" data-i18n="about.stat2_label">Spécialisation</span>
                             </div>
                         </div>
                         <div class="stat-card" data-animate="fade-up" data-delay="300">
                             <div class="stat-icon"><i class="ph ph-brain"></i></div>
                             <div class="stat-info">
-                                <span class="stat-value">IA & Robotique</span>
-                                <span class="stat-label">Domaines de passion</span>
+                                <span class="stat-value" data-i18n="about.stat3_value">IA & Robotique</span>
+                                <span class="stat-label" data-i18n="about.stat3_label">Domaines de passion</span>
                             </div>
                         </div>
                         <div class="stat-card" data-animate="fade-up" data-delay="400">
                             <div class="stat-icon"><i class="ph ph-leaf"></i></div>
                             <div class="stat-info">
-                                <span class="stat-value">Éthique</span>
-                                <span class="stat-label">Technologie responsable</span>
+                                <span class="stat-value" data-i18n="about.stat4_value">Éthique</span>
+                                <span class="stat-label" data-i18n="about.stat4_label">Technologie responsable</span>
                             </div>
                         </div>
                     </div>
@@ -187,13 +210,10 @@
                     <div class="about-image-wrapper">
                         <div class="about-geometric-frame">
                             <svg viewBox="0 0 400 400" class="geometric-frame-svg">
-                                <!-- Outer octagon -->
                                 <polygon points="200,20 340,80 380,200 340,320 200,380 60,320 20,200 60,80" 
                                     fill="none" stroke="var(--emerald)" stroke-width="1.5" opacity="0.6"/>
-                                <!-- Inner octagon -->
                                 <polygon points="200,60 310,105 340,200 310,295 200,340 90,295 60,200 90,105" 
                                     fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.4"/>
-                                <!-- Star pattern -->
                                 <line x1="200" y1="20" x2="200" y2="380" stroke="var(--emerald)" stroke-width="0.5" opacity="0.2"/>
                                 <line x1="20" y1="200" x2="380" y2="200" stroke="var(--emerald)" stroke-width="0.5" opacity="0.2"/>
                                 <line x1="60" y1="80" x2="340" y2="320" stroke="var(--emerald)" stroke-width="0.5" opacity="0.2"/>
@@ -218,8 +238,8 @@
         <div class="section-pattern"></div>
         <div class="container">
             <div class="section-header" data-animate="fade-up">
-                <span class="section-tag"><i class="ph ph-code"></i> Expertise</span>
-                <h2 class="section-title">Compétences <span class="text-gradient">Techniques</span></h2>
+                <span class="section-tag"><i class="ph ph-code"></i> <span data-i18n="skills.tag">Expertise</span></span>
+                <h2 class="section-title"><span data-i18n="skills.title_pre">Compétences</span> <span class="text-gradient" data-i18n="skills.title_highlight">Techniques</span></h2>
                 <div class="section-divider">
                     <span class="divider-star">✦</span>
                 </div>
@@ -232,7 +252,7 @@
                         <div class="skill-icon-wrapper">
                             <i class="ph ph-brain"></i>
                         </div>
-                        <h3>Informatique & IA</h3>
+                        <h3 data-i18n="skills.cat1_title">Informatique & IA</h3>
                     </div>
                     <div class="skill-card-body">
                         <div class="skill-item">
@@ -255,7 +275,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Intelligence Artificielle</span>
+                                <span class="skill-name" data-i18n="skills.ai">Intelligence Artificielle</span>
                                 <span class="skill-percent">70%</span>
                             </div>
                             <div class="skill-bar">
@@ -264,7 +284,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Internet des Objets (IoT)</span>
+                                <span class="skill-name" data-i18n="skills.iot">Internet des Objets (IoT)</span>
                                 <span class="skill-percent">75%</span>
                             </div>
                             <div class="skill-bar">
@@ -285,12 +305,12 @@
                         <div class="skill-icon-wrapper skill-icon-blue">
                             <i class="ph ph-cpu"></i>
                         </div>
-                        <h3>Électronique & Embarqué</h3>
+                        <h3 data-i18n="skills.cat2_title">Électronique & Embarqué</h3>
                     </div>
                     <div class="skill-card-body">
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Informatique Embarquée</span>
+                                <span class="skill-name" data-i18n="skills.embedded">Informatique Embarquée</span>
                                 <span class="skill-percent">80%</span>
                             </div>
                             <div class="skill-bar skill-bar-blue">
@@ -299,7 +319,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Microcontrôleurs</span>
+                                <span class="skill-name" data-i18n="skills.micro">Microcontrôleurs</span>
                                 <span class="skill-percent">78%</span>
                             </div>
                             <div class="skill-bar skill-bar-blue">
@@ -308,7 +328,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Traitement du Signal</span>
+                                <span class="skill-name" data-i18n="skills.signal">Traitement du Signal</span>
                                 <span class="skill-percent">72%</span>
                             </div>
                             <div class="skill-bar skill-bar-blue">
@@ -317,7 +337,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Capteurs Intelligents</span>
+                                <span class="skill-name" data-i18n="skills.sensors">Capteurs Intelligents</span>
                                 <span class="skill-percent">76%</span>
                             </div>
                             <div class="skill-bar skill-bar-blue">
@@ -338,12 +358,12 @@
                         <div class="skill-icon-wrapper skill-icon-gold">
                             <i class="ph ph-robot"></i>
                         </div>
-                        <h3>Mécanique & Automatisation</h3>
+                        <h3 data-i18n="skills.cat3_title">Mécanique & Automatisation</h3>
                     </div>
                     <div class="skill-card-body">
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Conception Mécanique</span>
+                                <span class="skill-name" data-i18n="skills.mech_design">Conception Mécanique</span>
                                 <span class="skill-percent">75%</span>
                             </div>
                             <div class="skill-bar skill-bar-gold">
@@ -352,7 +372,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Robotique</span>
+                                <span class="skill-name" data-i18n="skills.robotics">Robotique</span>
                                 <span class="skill-percent">78%</span>
                             </div>
                             <div class="skill-bar skill-bar-gold">
@@ -361,7 +381,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Systèmes Asservis</span>
+                                <span class="skill-name" data-i18n="skills.control">Systèmes Asservis</span>
                                 <span class="skill-percent">73%</span>
                             </div>
                             <div class="skill-bar skill-bar-gold">
@@ -393,19 +413,19 @@
         <div class="section-pattern"></div>
         <div class="container">
             <div class="section-header" data-animate="fade-up">
-                <span class="section-tag"><i class="ph ph-folder-notch-open"></i> Réalisations</span>
-                <h2 class="section-title">Mes <span class="text-gradient">Projets</span></h2>
+                <span class="section-tag"><i class="ph ph-folder-notch-open"></i> <span data-i18n="projects.tag">Réalisations</span></span>
+                <h2 class="section-title"><span data-i18n="projects.title_pre">Mes</span> <span class="text-gradient" data-i18n="projects.title_highlight">Projets</span></h2>
                 <div class="section-divider">
                     <span class="divider-star">✦</span>
                 </div>
-                <p class="section-subtitle">Des projets qui reflètent ma passion pour l'innovation et l'ingénierie.</p>
+                <p class="section-subtitle" data-i18n="projects.subtitle">Des projets qui reflètent ma passion pour l'innovation et l'ingénierie.</p>
             </div>
 
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: Optimization in AI -->
                 <article class="project-card" data-animate="fade-up" data-delay="100" id="project-card-1">
                     <div class="project-image">
-                        <img src="assets/images/project-robotics.png" alt="Robot autonome" loading="lazy">
+                        <img src="assets/images/project-optimization.png" alt="Optimization AI" loading="lazy">
                         <div class="project-image-overlay">
                             <a href="#" class="project-link-btn" aria-label="Voir le projet">
                                 <i class="ph ph-arrow-up-right"></i>
@@ -413,24 +433,25 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Robot Mobile Autonome</h3>
-                        <p class="project-description">
-                            Conception et réalisation d'un robot mobile capable de naviguer de manière autonome 
-                            dans un environnement inconnu grâce à des capteurs ultrasoniques et un algorithme d'évitement d'obstacles.
+                        <h3 class="project-title" data-i18n="projects.p1_title">Méthodes d'Optimisation en IA</h3>
+                        <p class="project-description" data-i18n="projects.p1_desc">
+                            Étude et implémentation des méthodes d'optimisation appliquées à l'intelligence artificielle : 
+                            descente de gradient, algorithmes évolutionnaires, optimisation par essaim de particules (PSO) 
+                            et recherche de minima globaux dans les réseaux de neurones.
                         </p>
                         <div class="project-tags">
-                            <span class="tag">Arduino</span>
-                            <span class="tag">C++</span>
-                            <span class="tag">Robotique</span>
-                            <span class="tag">Capteurs</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">IA</span>
+                            <span class="tag">Gradient Descent</span>
+                            <span class="tag">PSO</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 2 -->
+                <!-- Project 2: Statistical Tests -->
                 <article class="project-card" data-animate="fade-up" data-delay="200" id="project-card-2">
                     <div class="project-image">
-                        <img src="assets/images/project-iot.png" alt="Système IoT intelligent" loading="lazy">
+                        <img src="assets/images/project-statistics.png" alt="Statistical Tests" loading="lazy">
                         <div class="project-image-overlay">
                             <a href="#" class="project-link-btn" aria-label="Voir le projet">
                                 <i class="ph ph-arrow-up-right"></i>
@@ -438,24 +459,25 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Système Domotique IoT</h3>
-                        <p class="project-description">
-                            Développement d'un système intelligent de monitoring environnemental avec des capteurs connectés 
-                            (température, humidité, qualité de l'air) et un dashboard web temps réel.
+                        <h3 class="project-title" data-i18n="projects.p2_title">Tests Statistiques et Applications</h3>
+                        <p class="project-description" data-i18n="projects.p2_desc">
+                            Étude approfondie des tests statistiques (T-test, Chi², ANOVA, Kolmogorov-Smirnov) et de 
+                            leurs applications pratiques en ingénierie et en analyse de données. Implémentation de 
+                            simulations et de validations sur des jeux de données réels.
                         </p>
                         <div class="project-tags">
-                            <span class="tag">ESP32</span>
-                            <span class="tag">IoT</span>
-                            <span class="tag">MQTT</span>
+                            <span class="tag">Statistiques</span>
                             <span class="tag">Python</span>
+                            <span class="tag">R</span>
+                            <span class="tag">Analyse de données</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 3 -->
-                <article class="project-card" data-animate="fade-up" data-delay="300" id="project-card-3">
+                <!-- Project 3: Stochastic Processes -->
+                <article class="project-card" data-animate="fade-up" data-delay="100" id="project-card-3">
                     <div class="project-image">
-                        <img src="assets/images/project-ai.png" alt="Projet IA" loading="lazy">
+                        <img src="assets/images/project-stochastic.png" alt="Stochastic Processes" loading="lazy">
                         <div class="project-image-overlay">
                             <a href="#" class="project-link-btn" aria-label="Voir le projet">
                                 <i class="ph ph-arrow-up-right"></i>
@@ -463,24 +485,51 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Classification par Deep Learning</h3>
-                        <p class="project-description">
-                            Implémentation d'un modèle de réseau de neurones convolutif (CNN) pour la classification 
-                            d'images, avec entraînement sur GPU et optimisation des hyperparamètres.
+                        <h3 class="project-title" data-i18n="projects.p3_title">Les Processus Stochastiques</h3>
+                        <p class="project-description" data-i18n="projects.p3_desc">
+                            Modélisation et simulation de processus stochastiques : chaînes de Markov, processus de 
+                            Poisson, mouvement brownien et files d'attente. Applications à la modélisation de systèmes 
+                            aléatoires en ingénierie et en finance.
                         </p>
                         <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Markov</span>
+                            <span class="tag">Probabilités</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">MATLAB</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Optimal Control in AI -->
+                <article class="project-card" data-animate="fade-up" data-delay="200" id="project-card-4">
+                    <div class="project-image">
+                        <img src="assets/images/project-optimal-control.png" alt="Optimal Control" loading="lazy">
+                        <div class="project-image-overlay">
+                            <a href="#" class="project-link-btn" aria-label="Voir le projet">
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-i18n="projects.p4_title">Contrôle Optimal en IA</h3>
+                        <p class="project-description" data-i18n="projects.p4_desc">
+                            Étude du contrôle optimal appliqué à l'intelligence artificielle : programmation dynamique, 
+                            principe du maximum de Pontryagin, apprentissage par renforcement (Reinforcement Learning) 
+                            et contrôle adaptatif de systèmes complexes.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Reinforcement Learning</span>
                             <span class="tag">IA</span>
-                            <span class="tag">CNN</span>
+                            <span class="tag">Contrôle</span>
+                            <span class="tag">Python</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 4 -->
-                <article class="project-card" data-animate="fade-up" data-delay="400" id="project-card-4">
+                <!-- Project 5: NP Complexity & TSP -->
+                <article class="project-card" data-animate="fade-up" data-delay="100" id="project-card-5">
                     <div class="project-image">
-                        <img src="assets/images/project-embedded.png" alt="Système embarqué" loading="lazy">
+                        <img src="assets/images/project-tsp.png" alt="Complexité NP et TSP" loading="lazy">
                         <div class="project-image-overlay">
                             <a href="#" class="project-link-btn" aria-label="Voir le projet">
                                 <i class="ph ph-arrow-up-right"></i>
@@ -488,16 +537,69 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Système de Contrôle Embarqué</h3>
-                        <p class="project-description">
-                            Conception d'un système de contrôle PID embarqué sur STM32 pour la régulation de vitesse 
-                            d'un moteur DC, avec interface de monitoring série et visualisation en temps réel.
+                        <h3 class="project-title" data-i18n="projects.p5_title">Complexité NP & Problème du Voyageur de Commerce</h3>
+                        <p class="project-description" data-i18n="projects.p5_desc">
+                            Analyse de la complexité des problèmes NP-difficiles avec le TSP (Travelling Salesman Problem) 
+                            comme cas d'étude. Implémentation d'heuristiques et de métaheuristiques (recuit simulé, 
+                            algorithmes génétiques) pour résoudre des instances complexes.
                         </p>
                         <div class="project-tags">
-                            <span class="tag">STM32</span>
-                            <span class="tag">C</span>
-                            <span class="tag">PID</span>
-                            <span class="tag">Embarqué</span>
+                            <span class="tag">NP-Hard</span>
+                            <span class="tag">TSP</span>
+                            <span class="tag">Heuristiques</span>
+                            <span class="tag">C++</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: P vs NP -->
+                <article class="project-card" data-animate="fade-up" data-delay="200" id="project-card-6">
+                    <div class="project-image">
+                        <img src="assets/images/project-pvsnp.png" alt="P vs NP" loading="lazy">
+                        <div class="project-image-overlay">
+                            <a href="#" class="project-link-btn" aria-label="Voir le projet">
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-i18n="projects.p6_title">Le Problème P vs NP</h3>
+                        <p class="project-description" data-i18n="projects.p6_desc">
+                            Étude théorique du problème fondamental P vs NP en informatique. Analyse des classes de 
+                            complexité, des réductions polynomiales, de la NP-complétude et des implications pour la 
+                            cryptographie et l'algorithmique moderne.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Complexité</span>
+                            <span class="tag">P vs NP</span>
+                            <span class="tag">Théorie</span>
+                            <span class="tag">Algorithmique</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7: 3-SAT -->
+                <article class="project-card project-card-featured" data-animate="fade-up" data-delay="100" id="project-card-7">
+                    <div class="project-image">
+                        <img src="assets/images/project-3sat.png" alt="3-SAT Problem" loading="lazy">
+                        <div class="project-image-overlay">
+                            <a href="#" class="project-link-btn" aria-label="Voir le projet">
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-i18n="projects.p7_title">Le Problème 3-SAT</h3>
+                        <p class="project-description" data-i18n="projects.p7_desc">
+                            Étude du problème de satisfaisabilité booléenne 3-SAT, l'un des premiers problèmes prouvés 
+                            NP-complets (théorème de Cook-Levin). Implémentation de solveurs SAT et analyse de la 
+                            transition de phase dans les instances aléatoires.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">3-SAT</span>
+                            <span class="tag">NP-Complet</span>
+                            <span class="tag">Logique</span>
+                            <span class="tag">C++</span>
                         </div>
                     </div>
                 </article>
@@ -510,8 +612,8 @@
         <div class="section-pattern"></div>
         <div class="container">
             <div class="section-header" data-animate="fade-up">
-                <span class="section-tag"><i class="ph ph-chat-dots"></i> Communication</span>
-                <h2 class="section-title">Me <span class="text-gradient">Contacter</span></h2>
+                <span class="section-tag"><i class="ph ph-chat-dots"></i> <span data-i18n="contact.tag">Communication</span></span>
+                <h2 class="section-title"><span data-i18n="contact.title_pre">Me</span> <span class="text-gradient" data-i18n="contact.title_highlight">Contacter</span></h2>
                 <div class="section-divider">
                     <span class="divider-star">✦</span>
                 </div>
@@ -519,82 +621,82 @@
 
             <div class="contact-grid">
                 <div class="contact-info" data-animate="fade-right">
-                    <h3 class="contact-info-title">Restons en contact</h3>
-                    <p class="contact-info-text">
+                    <h3 class="contact-info-title" data-i18n="contact.info_title">Restons en contact</h3>
+                    <p class="contact-info-text" data-i18n="contact.info_text">
                         N'hésitez pas à me contacter pour discuter de projets, d'opportunités
                         ou simplement pour échanger autour de l'ingénierie et de l'innovation.
                     </p>
 
                     <div class="contact-links">
-                        <a href="mailto:taoufik.modrik@email.com" class="contact-link-item" id="contact-email">
+                        <a href="mailto:taoufik.moudrik@email.com" class="contact-link-item" id="contact-email">
                             <div class="contact-link-icon"><i class="ph ph-envelope-simple"></i></div>
                             <div class="contact-link-info">
                                 <span class="contact-link-label">Email</span>
-                                <span class="contact-link-value">taoufik.modrik@email.com</span>
+                                <span class="contact-link-value">taoufik.moudrik@email.com</span>
                             </div>
                         </a>
                         <a href="https://linkedin.com/in/" class="contact-link-item" id="contact-linkedin" target="_blank" rel="noopener noreferrer">
                             <div class="contact-link-icon"><i class="ph ph-linkedin-logo"></i></div>
                             <div class="contact-link-info">
                                 <span class="contact-link-label">LinkedIn</span>
-                                <span class="contact-link-value">Taoufik Modrik</span>
+                                <span class="contact-link-value">Taoufik Moudrik</span>
                             </div>
                         </a>
                         <a href="https://github.com/" class="contact-link-item" id="contact-github" target="_blank" rel="noopener noreferrer">
                             <div class="contact-link-icon"><i class="ph ph-github-logo"></i></div>
                             <div class="contact-link-info">
                                 <span class="contact-link-label">GitHub</span>
-                                <span class="contact-link-value">taoufik-modrik</span>
+                                <span class="contact-link-value">taoufik-moudrik</span>
                             </div>
                         </a>
                         <a href="#" class="contact-link-item" id="contact-location">
                             <div class="contact-link-icon"><i class="ph ph-map-pin"></i></div>
                             <div class="contact-link-info">
-                                <span class="contact-link-label">Localisation</span>
-                                <span class="contact-link-value">Safi, Maroc 🇲🇦</span>
+                                <span class="contact-link-label" data-i18n="contact.location_label">Localisation</span>
+                                <span class="contact-link-value">Safi, <span data-i18n="contact.country">Maroc</span> 🇲🇦</span>
                             </div>
                         </a>
                     </div>
 
                     <div class="contact-closing">
                         <p class="closing-arabic">وَعَلَيْكُمُ ٱلسَّلَامُ وَرَحْمَةُ ٱللَّٰهِ</p>
-                        <p class="closing-text">N'hésitez pas à me contacter.<br><em>Paix sur vous.</em></p>
+                        <p class="closing-text" data-i18n-html="contact.closing">N'hésitez pas à me contacter.<br><em>Paix sur vous.</em></p>
                     </div>
                 </div>
 
                 <div class="contact-form-wrapper" data-animate="fade-left">
                     <form class="contact-form" id="contact-form">
                         <div class="form-group">
-                            <label for="form-name" class="form-label">Nom complet</label>
+                            <label for="form-name" class="form-label" data-i18n="contact.form_name">Nom complet</label>
                             <div class="form-input-wrapper">
                                 <i class="ph ph-user form-icon"></i>
-                                <input type="text" id="form-name" name="name" class="form-input" placeholder="Votre nom" required>
+                                <input type="text" id="form-name" name="name" class="form-input" data-i18n-placeholder="contact.form_name_ph" placeholder="Votre nom" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="form-email" class="form-label">Adresse email</label>
+                            <label for="form-email" class="form-label" data-i18n="contact.form_email">Adresse email</label>
                             <div class="form-input-wrapper">
                                 <i class="ph ph-at form-icon"></i>
-                                <input type="email" id="form-email" name="email" class="form-input" placeholder="votre@email.com" required>
+                                <input type="email" id="form-email" name="email" class="form-input" data-i18n-placeholder="contact.form_email_ph" placeholder="votre@email.com" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="form-subject" class="form-label">Sujet</label>
+                            <label for="form-subject" class="form-label" data-i18n="contact.form_subject">Sujet</label>
                             <div class="form-input-wrapper">
                                 <i class="ph ph-chat-text form-icon"></i>
-                                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Sujet de votre message">
+                                <input type="text" id="form-subject" name="subject" class="form-input" data-i18n-placeholder="contact.form_subject_ph" placeholder="Sujet de votre message">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="form-message" class="form-label">Message</label>
                             <div class="form-input-wrapper form-textarea-wrapper">
                                 <i class="ph ph-pencil-simple form-icon"></i>
-                                <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="Votre message..." rows="5" required></textarea>
+                                <textarea id="form-message" name="message" class="form-input form-textarea" data-i18n-placeholder="contact.form_message_ph" placeholder="Votre message..." rows="5" required></textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary btn-submit" id="form-submit">
                             <i class="ph ph-paper-plane-tilt"></i>
-                            <span>Envoyer le message</span>
+                            <span data-i18n="contact.form_submit">Envoyer le message</span>
                         </button>
                     </form>
                 </div>
@@ -617,7 +719,7 @@
                         </span>
                         <span class="logo-text">Taoufik<span class="logo-dot">.</span></span>
                     </a>
-                    <p class="footer-tagline">Élève Ingénieur en Mécatronique — ENSA Safi</p>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Élève Ingénieur en Mécatronique — ENSA Safi</p>
                 </div>
 
                 <div class="footer-links">
@@ -627,14 +729,14 @@
                     <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="GitHub">
                         <i class="ph ph-github-logo"></i>
                     </a>
-                    <a href="mailto:taoufik.modrik@email.com" class="footer-social" aria-label="Email">
+                    <a href="mailto:taoufik.moudrik@email.com" class="footer-social" aria-label="Email">
                         <i class="ph ph-envelope-simple"></i>
                     </a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Taoufik Modrik. Tous droits réservés.</p>
-                <p class="footer-dua">رَبِّ زِدْنِي عِلْمًا — Mon Seigneur, augmente ma science</p>
+                <p>&copy; 2026 Taoufik Moudrik. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+                <p class="footer-dua">رَبِّ زِدْنِي عِلْمًا — <span data-i18n="footer.dua">Mon Seigneur, augmente ma science</span></p>
             </div>
         </div>
     </footer>

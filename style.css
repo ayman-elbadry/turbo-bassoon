@@ -1,5 +1,5 @@
 /* ============================================================
-   TAOUFIK MODRIK PORTFOLIO — Islamic Modern Theme
+   TAOUFIK MOUDRIK PORTFOLIO — Islamic Modern Theme
    ============================================================ */
 
 /* ==================== CSS VARIABLES ==================== */
@@ -129,6 +129,64 @@ ul {
     overflow: hidden;
 }
 
+/* ==================== RTL SUPPORT ==================== */
+html[dir="rtl"] body {
+    font-family: var(--font-arabic), var(--font-body);
+}
+
+html[dir="rtl"] .hero-quote {
+    border-left: none;
+    border-right: 3px solid var(--gold);
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+    text-align: right;
+}
+
+html[dir="rtl"] .nav-links {
+    direction: rtl;
+}
+
+html[dir="rtl"] .contact-link-item:hover {
+    transform: translateX(-6px);
+}
+
+html[dir="rtl"] .form-input {
+    padding: 14px 48px 14px 16px;
+}
+
+html[dir="rtl"] .form-icon {
+    left: auto;
+    right: 16px;
+}
+
+html[dir="rtl"] .section-tag {
+    direction: rtl;
+}
+
+html[dir="rtl"] .about-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .skill-info {
+    direction: rtl;
+}
+
+html[dir="rtl"] .project-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .contact-info {
+    text-align: right;
+}
+
+html[dir="rtl"] .about-decoration-dots {
+    right: auto;
+    left: -20px;
+}
+
+html[dir="rtl"] .hero-greeting {
+    direction: rtl;
+}
+
 /* ==================== PAGE LOADER ==================== */
 .page-loader {
     position: fixed;
@@ -220,6 +278,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
 }
 
 .nav-logo {
@@ -227,6 +286,7 @@ ul {
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .logo-text {
@@ -248,19 +308,20 @@ ul {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .nav-link {
     font-family: var(--font-heading);
     font-weight: 500;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     letter-spacing: 0.02em;
-    padding: 8px 18px;
+    padding: 8px 16px;
     border-radius: 100px;
     color: rgba(255, 255, 255, 0.8);
     transition: var(--transition-fast);
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -277,6 +338,123 @@ ul {
 .navbar.scrolled .nav-link.active {
     color: var(--emerald);
     background: var(--emerald-glow);
+}
+
+/* ==================== LANGUAGE SWITCHER ==================== */
+.lang-switcher {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.lang-current {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 100px;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: var(--transition);
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.78rem;
+}
+
+.lang-current:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar.scrolled .lang-current {
+    color: var(--text-primary);
+    border-color: var(--surface-glass-border);
+    background: var(--sand);
+}
+
+.navbar.scrolled .lang-current:hover {
+    border-color: var(--emerald);
+    background: var(--emerald-glow);
+}
+
+.lang-flag {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.lang-code {
+    letter-spacing: 0.05em;
+}
+
+.lang-current i {
+    font-size: 0.75rem;
+    transition: var(--transition-fast);
+}
+
+.lang-switcher.open .lang-current i {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 160px;
+    background: var(--surface-white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--surface-glass-border);
+    box-shadow: var(--shadow-lg);
+    padding: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px) scale(0.96);
+    transition: var(--transition);
+    z-index: 1001;
+}
+
+.lang-switcher.open .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 14px;
+    border: none;
+    background: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.lang-option:hover {
+    background: var(--sand);
+    color: var(--text-primary);
+}
+
+.lang-option.active {
+    background: var(--emerald-glow);
+    color: var(--emerald);
+    font-weight: 600;
+}
+
+.lang-option .lang-flag {
+    font-size: 1.2rem;
+}
+
+.lang-name {
+    flex: 1;
+    text-align: left;
 }
 
 /* Mobile toggle */
@@ -976,6 +1154,13 @@ ul {
     gap: 32px;
 }
 
+/* Center the last (7th) card if it's alone in its row */
+.projects-grid .project-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 580px;
+    justify-self: center;
+}
+
 .project-card {
     background: var(--surface-white);
     border-radius: var(--radius-lg);
@@ -993,7 +1178,7 @@ ul {
 .project-image {
     position: relative;
     overflow: hidden;
-    height: 240px;
+    height: 220px;
 }
 
 .project-image img {
@@ -1047,22 +1232,23 @@ ul {
 }
 
 .project-content {
-    padding: 28px;
+    padding: 24px 28px 28px;
 }
 
 .project-title {
     font-family: var(--font-heading);
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    line-height: 1.4;
 }
 
 .project-description {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--text-secondary);
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .project-tags {
@@ -1442,6 +1628,10 @@ ul {
         max-width: 600px;
         margin: 0 auto;
     }
+
+    .projects-grid .project-card:last-child:nth-child(odd) {
+        max-width: 100%;
+    }
 }
 
 /* Mobile */
@@ -1477,6 +1667,12 @@ ul {
 
     .nav-toggle {
         display: flex;
+    }
+
+    .lang-switcher {
+        order: -1;
+        margin-right: auto;
+        margin-left: 16px;
     }
 
     .hero-greeting {
