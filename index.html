@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taoufik Modrik — Élève Ingénieur en Mécatronique</title>
+    <meta name="description" content="Portfolio de Taoufik Modrik, Élève Ingénieur d'État en Génie Mécatronique et Systèmes Intelligents à l'ENSA Safi. Robotique, IA, Systèmes Embarqués.">
+    <meta name="keywords" content="Taoufik Modrik, Mécatronique, ENSA Safi, Robotique, IA, Ingénieur, Portfolio">
+    <meta name="author" content="Taoufik Modrik">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Taoufik Modrik — Portfolio Ingénieur Mécatronique">
+    <meta property="og:description" content="Élève Ingénieur en Mécatronique et Systèmes Intelligents | ENSA Safi">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== LOADER ==================== -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-content">
+            <div class="loader-geometric">
+                <svg viewBox="0 0 100 100" class="loader-svg">
+                    <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="var(--emerald)" stroke-width="1.5"/>
+                    <polygon points="50,15 85,32 85,68 50,85 15,68 15,32" fill="none" stroke="var(--gold)" stroke-width="1"/>
+                    <polygon points="50,25 75,37 75,63 50,75 25,63 25,37" fill="none" stroke="var(--emerald)" stroke-width="0.8"/>
+                </svg>
+            </div>
+            <p class="loader-text">بِسْمِ ٱللَّٰهِ</p>
+        </div>
+    </div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="main-nav" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 40 40" width="32" height="32">
+                        <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" fill="none" stroke="var(--emerald)" stroke-width="2"/>
+                        <text x="20" y="24" text-anchor="middle" fill="var(--gold)" font-size="14" font-family="Montserrat" font-weight="700">T</text>
+                    </svg>
+                </span>
+                <span class="logo-text">Taoufik<span class="logo-dot">.</span></span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Accueil</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">À propos</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Compétences</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projets</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-pattern-overlay"></div>
+        
+        <!-- Floating geometric elements -->
+        <div class="hero-float hero-float-1"></div>
+        <div class="hero-float hero-float-2"></div>
+        <div class="hero-float hero-float-3"></div>
+
+        <div class="hero-container">
+            <div class="hero-badge" data-animate="fade-down">
+                <i class="ph ph-mosque"></i>
+                <span>Bismillah — Au nom de Dieu</span>
+            </div>
+            
+            <h1 class="hero-title" data-animate="fade-up">
+                <span class="hero-greeting">سلام عليكم</span>
+                <span class="hero-name-line">
+                    Salam, je suis <span class="hero-name-highlight">Taoufik Modrik</span>
+                </span>
+            </h1>
+            
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                Élève Ingénieur en <span class="text-gradient">Mécatronique et Systèmes Intelligents</span> | ENSA Safi
+            </p>
+
+            <blockquote class="hero-quote" data-animate="fade-up" data-delay="400">
+                <i class="ph ph-quotes"></i>
+                <p>« Celui qui emprunte un chemin à la recherche du savoir, Allah lui facilite un chemin vers le Paradis. »</p>
+                <cite>— Hadith (Muslim)</cite>
+            </blockquote>
+
+            <div class="hero-cta" data-animate="fade-up" data-delay="600">
+                <a href="#projects" class="btn btn-primary" id="cta-projects">
+                    <i class="ph ph-rocket-launch"></i>
+                    <span>Voir mes projets</span>
+                </a>
+                <a href="#contact" class="btn btn-outline" id="cta-contact">
+                    <i class="ph ph-envelope-simple"></i>
+                    <span>Me contacter</span>
+                </a>
+            </div>
+
+            <div class="hero-scroll-indicator" data-animate="fade-up" data-delay="800">
+                <div class="scroll-line"></div>
+                <span>Défiler</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section about-section">
+        <div class="section-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i class="ph ph-user"></i> Présentation</span>
+                <h2 class="section-title">À propos de <span class="text-gradient">moi</span></h2>
+                <div class="section-divider">
+                    <span class="divider-star">✦</span>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content" data-animate="fade-right">
+                    <div class="about-intro">
+                        <p class="about-lead">
+                            Passionné par la <strong>conception de systèmes complexes</strong> alliant mécanique, 
+                            électronique et informatique, je suis convaincu que l'innovation technologique peut 
+                            transformer positivement notre monde.
+                        </p>
+                        <p>
+                            En tant qu'élève ingénieur en <strong>Génie Mécatronique et Systèmes Intelligents</strong> 
+                            à l'ENSA Safi, je développe des compétences à la croisée de la robotique, 
+                            de l'intelligence artificielle et des systèmes embarqués.
+                        </p>
+                        <p>
+                            Ma volonté est d'utiliser la technologie — qu'il s'agisse des <strong>énergies renouvelables</strong>, 
+                            des <strong>systèmes intelligents</strong> ou de l'<strong>automatisation</strong> — de manière 
+                            <em>éthique et utile</em>, au service de la communauté et dans le respect des valeurs 
+                            qui guident mon parcours.
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-card" data-animate="fade-up" data-delay="100">
+                            <div class="stat-icon"><i class="ph ph-graduation-cap"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">ENSA Safi</span>
+                                <span class="stat-label">Formation d'Ingénieur</span>
+                            </div>
+                        </div>
+                        <div class="stat-card" data-animate="fade-up" data-delay="200">
+                            <div class="stat-icon"><i class="ph ph-gear-six"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">Mécatronique</span>
+                                <span class="stat-label">Spécialisation</span>
+                            </div>
+                        </div>
+                        <div class="stat-card" data-animate="fade-up" data-delay="300">
+                            <div class="stat-icon"><i class="ph ph-brain"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">IA & Robotique</span>
+                                <span class="stat-label">Domaines de passion</span>
+                            </div>
+                        </div>
+                        <div class="stat-card" data-animate="fade-up" data-delay="400">
+                            <div class="stat-icon"><i class="ph ph-leaf"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value">Éthique</span>
+                                <span class="stat-label">Technologie responsable</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual" data-animate="fade-left">
+                    <div class="about-image-wrapper">
+                        <div class="about-geometric-frame">
+                            <svg viewBox="0 0 400 400" class="geometric-frame-svg">
+                                <!-- Outer octagon -->
+                                <polygon points="200,20 340,80 380,200 340,320 200,380 60,320 20,200 60,80" 
+                                    fill="none" stroke="var(--emerald)" stroke-width="1.5" opacity="0.6"/>
+                                <!-- Inner octagon -->
+                                <polygon points="200,60 310,105 340,200 310,295 200,340 90,295 60,200 90,105" 
+                                    fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.4"/>
+                                <!-- Star pattern -->
+                                <line x1="200" y1="20" x2="200" y2="380" stroke="var(--emerald)" stroke-width="0.5" opacity="0.2"/>
+                                <line x1="20" y1="200" x2="380" y2="200" stroke="var(--emerald)" stroke-width="0.5" opacity="0.2"/>
+                                <line x1="60" y1="80" x2="340" y2="320" stroke="var(--emerald)" stroke-width="0.5" opacity="0.2"/>
+                                <line x1="340" y1="80" x2="60" y2="320" stroke="var(--emerald)" stroke-width="0.5" opacity="0.2"/>
+                            </svg>
+                            <div class="about-avatar">
+                                <div class="avatar-placeholder">
+                                    <i class="ph ph-user-circle"></i>
+                                    <span>TM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-decoration-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section skills-section">
+        <div class="section-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i class="ph ph-code"></i> Expertise</span>
+                <h2 class="section-title">Compétences <span class="text-gradient">Techniques</span></h2>
+                <div class="section-divider">
+                    <span class="divider-star">✦</span>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Informatique & IA -->
+                <div class="skill-category-card" data-animate="fade-up" data-delay="100">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="ph ph-brain"></i>
+                        </div>
+                        <h3>Informatique & IA</h3>
+                    </div>
+                    <div class="skill-card-body">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++ (POO)</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Intelligence Artificielle</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Internet des Objets (IoT)</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">MQTT</span>
+                    </div>
+                </div>
+
+                <!-- Électronique & Embarqué -->
+                <div class="skill-category-card" data-animate="fade-up" data-delay="200">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper skill-icon-blue">
+                            <i class="ph ph-cpu"></i>
+                        </div>
+                        <h3>Électronique & Embarqué</h3>
+                    </div>
+                    <div class="skill-card-body">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Informatique Embarquée</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar skill-bar-blue">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Microcontrôleurs</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                            <div class="skill-bar skill-bar-blue">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Traitement du Signal</span>
+                                <span class="skill-percent">72%</span>
+                            </div>
+                            <div class="skill-bar skill-bar-blue">
+                                <div class="skill-fill" data-width="72"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Capteurs Intelligents</span>
+                                <span class="skill-percent">76%</span>
+                            </div>
+                            <div class="skill-bar skill-bar-blue">
+                                <div class="skill-fill" data-width="76"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card-tags">
+                        <span class="tag">STM32</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">ESP32</span>
+                    </div>
+                </div>
+
+                <!-- Mécanique & Automatisation -->
+                <div class="skill-category-card" data-animate="fade-up" data-delay="300">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper skill-icon-gold">
+                            <i class="ph ph-robot"></i>
+                        </div>
+                        <h3>Mécanique & Automatisation</h3>
+                    </div>
+                    <div class="skill-card-body">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Conception Mécanique</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar skill-bar-gold">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Robotique</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                            <div class="skill-bar skill-bar-gold">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Systèmes Asservis</span>
+                                <span class="skill-percent">73%</span>
+                            </div>
+                            <div class="skill-bar skill-bar-gold">
+                                <div class="skill-fill" data-width="73"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CAO / DAO</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar skill-bar-gold">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card-tags">
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">MATLAB</span>
+                        <span class="tag">Simulink</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="section projects-section">
+        <div class="section-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i class="ph ph-folder-notch-open"></i> Réalisations</span>
+                <h2 class="section-title">Mes <span class="text-gradient">Projets</span></h2>
+                <div class="section-divider">
+                    <span class="divider-star">✦</span>
+                </div>
+                <p class="section-subtitle">Des projets qui reflètent ma passion pour l'innovation et l'ingénierie.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-animate="fade-up" data-delay="100" id="project-card-1">
+                    <div class="project-image">
+                        <img src="assets/images/project-robotics.png" alt="Robot autonome" loading="lazy">
+                        <div class="project-image-overlay">
+                            <a href="#" class="project-link-btn" aria-label="Voir le projet">
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Robot Mobile Autonome</h3>
+                        <p class="project-description">
+                            Conception et réalisation d'un robot mobile capable de naviguer de manière autonome 
+                            dans un environnement inconnu grâce à des capteurs ultrasoniques et un algorithme d'évitement d'obstacles.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Robotique</span>
+                            <span class="tag">Capteurs</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-animate="fade-up" data-delay="200" id="project-card-2">
+                    <div class="project-image">
+                        <img src="assets/images/project-iot.png" alt="Système IoT intelligent" loading="lazy">
+                        <div class="project-image-overlay">
+                            <a href="#" class="project-link-btn" aria-label="Voir le projet">
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Système Domotique IoT</h3>
+                        <p class="project-description">
+                            Développement d'un système intelligent de monitoring environnemental avec des capteurs connectés 
+                            (température, humidité, qualité de l'air) et un dashboard web temps réel.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">MQTT</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-animate="fade-up" data-delay="300" id="project-card-3">
+                    <div class="project-image">
+                        <img src="assets/images/project-ai.png" alt="Projet IA" loading="lazy">
+                        <div class="project-image-overlay">
+                            <a href="#" class="project-link-btn" aria-label="Voir le projet">
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Classification par Deep Learning</h3>
+                        <p class="project-description">
+                            Implémentation d'un modèle de réseau de neurones convolutif (CNN) pour la classification 
+                            d'images, avec entraînement sur GPU et optimisation des hyperparamètres.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">IA</span>
+                            <span class="tag">CNN</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-animate="fade-up" data-delay="400" id="project-card-4">
+                    <div class="project-image">
+                        <img src="assets/images/project-embedded.png" alt="Système embarqué" loading="lazy">
+                        <div class="project-image-overlay">
+                            <a href="#" class="project-link-btn" aria-label="Voir le projet">
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Système de Contrôle Embarqué</h3>
+                        <p class="project-description">
+                            Conception d'un système de contrôle PID embarqué sur STM32 pour la régulation de vitesse 
+                            d'un moteur DC, avec interface de monitoring série et visualisation en temps réel.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">STM32</span>
+                            <span class="tag">C</span>
+                            <span class="tag">PID</span>
+                            <span class="tag">Embarqué</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section">
+        <div class="section-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag"><i class="ph ph-chat-dots"></i> Communication</span>
+                <h2 class="section-title">Me <span class="text-gradient">Contacter</span></h2>
+                <div class="section-divider">
+                    <span class="divider-star">✦</span>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <h3 class="contact-info-title">Restons en contact</h3>
+                    <p class="contact-info-text">
+                        N'hésitez pas à me contacter pour discuter de projets, d'opportunités
+                        ou simplement pour échanger autour de l'ingénierie et de l'innovation.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:taoufik.modrik@email.com" class="contact-link-item" id="contact-email">
+                            <div class="contact-link-icon"><i class="ph ph-envelope-simple"></i></div>
+                            <div class="contact-link-info">
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">taoufik.modrik@email.com</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/" class="contact-link-item" id="contact-linkedin" target="_blank" rel="noopener noreferrer">
+                            <div class="contact-link-icon"><i class="ph ph-linkedin-logo"></i></div>
+                            <div class="contact-link-info">
+                                <span class="contact-link-label">LinkedIn</span>
+                                <span class="contact-link-value">Taoufik Modrik</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/" class="contact-link-item" id="contact-github" target="_blank" rel="noopener noreferrer">
+                            <div class="contact-link-icon"><i class="ph ph-github-logo"></i></div>
+                            <div class="contact-link-info">
+                                <span class="contact-link-label">GitHub</span>
+                                <span class="contact-link-value">taoufik-modrik</span>
+                            </div>
+                        </a>
+                        <a href="#" class="contact-link-item" id="contact-location">
+                            <div class="contact-link-icon"><i class="ph ph-map-pin"></i></div>
+                            <div class="contact-link-info">
+                                <span class="contact-link-label">Localisation</span>
+                                <span class="contact-link-value">Safi, Maroc 🇲🇦</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-closing">
+                        <p class="closing-arabic">وَعَلَيْكُمُ ٱلسَّلَامُ وَرَحْمَةُ ٱللَّٰهِ</p>
+                        <p class="closing-text">N'hésitez pas à me contacter.<br><em>Paix sur vous.</em></p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-animate="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="form-name" class="form-label">Nom complet</label>
+                            <div class="form-input-wrapper">
+                                <i class="ph ph-user form-icon"></i>
+                                <input type="text" id="form-name" name="name" class="form-input" placeholder="Votre nom" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email" class="form-label">Adresse email</label>
+                            <div class="form-input-wrapper">
+                                <i class="ph ph-at form-icon"></i>
+                                <input type="email" id="form-email" name="email" class="form-input" placeholder="votre@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject" class="form-label">Sujet</label>
+                            <div class="form-input-wrapper">
+                                <i class="ph ph-chat-text form-icon"></i>
+                                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Sujet de votre message">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Message</label>
+                            <div class="form-input-wrapper form-textarea-wrapper">
+                                <i class="ph ph-pencil-simple form-icon"></i>
+                                <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="Votre message..." rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="form-submit">
+                            <i class="ph ph-paper-plane-tilt"></i>
+                            <span>Envoyer le message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 40 40" width="28" height="28">
+                                <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" fill="none" stroke="var(--emerald)" stroke-width="2"/>
+                                <text x="20" y="24" text-anchor="middle" fill="var(--gold)" font-size="14" font-family="Montserrat" font-weight="700">T</text>
+                            </svg>
+                        </span>
+                        <span class="logo-text">Taoufik<span class="logo-dot">.</span></span>
+                    </a>
+                    <p class="footer-tagline">Élève Ingénieur en Mécatronique — ENSA Safi</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+                        <i class="ph ph-linkedin-logo"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="GitHub">
+                        <i class="ph ph-github-logo"></i>
+                    </a>
+                    <a href="mailto:taoufik.modrik@email.com" class="footer-social" aria-label="Email">
+                        <i class="ph ph-envelope-simple"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Taoufik Modrik. Tous droits réservés.</p>
+                <p class="footer-dua">رَبِّ زِدْنِي عِلْمًا — Mon Seigneur, augmente ma science</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">
+        <i class="ph ph-caret-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
