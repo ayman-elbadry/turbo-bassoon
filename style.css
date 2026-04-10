@@ -1666,9 +1666,8 @@ html[dir="rtl"] .hero-greeting {
     }
 
     .lang-switcher {
-        order: -1;
-        margin-right: auto;
-        margin-left: 16px;
+        margin-inline-start: auto;
+        margin-inline-end: 16px;
     }
 
     .hero-greeting {
